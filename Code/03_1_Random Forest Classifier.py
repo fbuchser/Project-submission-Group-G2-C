@@ -134,7 +134,7 @@ performance(model = clf_old, model_name = "Base with Balanced Random Forest Clas
 default_hyperparameters = {'bootstrap': False, 'replacement': True, 'sampling_strategy': 'all'}
 clf_new = BalancedRandomForestClassifier(**default_hyperparameters, random_state=42)
 clf_new.fit(X_train, y_train)
-performance(model = clf_new, model_name = "Base with Balanced Random Forest Classifier and old default parameters")
+performance(model = clf_new, model_name = "Base with Balanced Random Forest Classifier and new default parameters")
 
 print("There is less overfitting for the Balanced Random Forest Classifier.\n")
 
