@@ -21,6 +21,6 @@ We recommend the following running order:
 Seperately on a server like stated in the document itself:
 - 02_Data Preprocessing 11-Imputations.ipynb
 
-BUT all files should run as it is now individually and without limitations, since we include our own output files in the submission.
-If you do not want to this delete all files in the Output folder (BUT NOT the subfolders) and generate each necessary output yourself.
-(ALSO do not delete the Imputation files in ".\Output\Data\02 11-Imputations" since the imputation takes considerable resources to run until the end - there are notes in the code files)
+BUT all files should run as it is now individually and without limitations, since we included our own output files in the submission.
+If you do not want to use our output files delete all files in the Output folder (BUT NOT the subfolders and (probably) NOT the ".\Output\Data\02 11-Imputations" files) and then generate each necessary output yourself by following our recommended running order.
+(IF you delete the ".\Output\Data\02 11-Imputations" files you will have to run 02_Data Preprocessing 11-Imputations.ipynb to re-generate them - this will take a while)
