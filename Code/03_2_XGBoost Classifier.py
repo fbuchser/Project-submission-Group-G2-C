@@ -157,7 +157,7 @@ print(f"Table of all Classes and assigned Weights: \n{df_Classes_Weights}")
 latex_table_classes_weights = df_Classes_Weights.to_latex(index=False, formatters={'Computed Class Weights': (lambda x: "{:.4f}".format(x))})
 
 # Save LaTeX table to a text file
-with open("./Output/Visualisations/03_2 XGB/05-Classes and Weights/Classes and Weights - XGB.txt", "w+") as f:
+with open("./Output/Visualisations/03_2 XGB/Classes and Weights - XGB.txt", "w+") as f:
     f.write(latex_table_classes_weights)
 
 print("LaTeX table has been saved to 'Classes and Weights.txt'.")
@@ -311,7 +311,7 @@ def performance_evaluation(
         #  -> use exactly these two string options
         #  -> if you dont use data_set = "Testing Set" then only the classification_report and confusion_matrix will be executed
         data_set,
-        # relative_path is a str (e.g. ./Output/Visualisations/03_2 08-Performance Evaluation/)
+        # relative_path is a str (e.g. ./Output/Visualisations/03_2 XGB/)
         #  -> this is the path where the visualisations will be saved without the file names
         relative_path,
         # Your true label values most likely called y_test
@@ -468,7 +468,7 @@ performance_evaluation(
     # data_set
     "Training Set",
     # relative_path
-    "./Output/Visualisations/03_2 XGB/08-Performance Evaluation/",
+    "./Output/Visualisations/03_2 XGB/",
     # y_test
     y_train,
     # y_pred 
@@ -486,7 +486,7 @@ performance_evaluation(
     # data_set
     "Testing Set",
     # relative_path
-    "./Output/Visualisations/03_2 XGB/08-Performance Evaluation/",
+    "./Output/Visualisations/03_2 XGB/",
     # y_test
     y_test,
     # y_pred 
@@ -533,4 +533,4 @@ plt.title("Feature Importance (SHAP Barplot) - XGBoost", fontsize=24)
 plt.ylabel("Feature Names", fontsize=18)
 plt.xlabel("SHAP Value (average impact on model output)", fontsize=18)
 
-plt.savefig("./Output/Visualisations/03_2 XGB/09-Feature Importance/SHAP barplot - XGB.png", bbox_inches="tight")
+plt.savefig("./Output/Visualisations/03_2 XGB/SHAP barplot - XGB.png", bbox_inches="tight")
