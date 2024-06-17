@@ -1,0 +1,5 @@
+,SVM
+macro-average ROC AUC,0.81
+ROC AUC of class Mutated,0.96
+ROC AUC of class NOS/NEC,0.69
+ROC AUC of class Wildtype,0.74

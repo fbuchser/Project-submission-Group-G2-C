@@ -1,0 +1,5 @@
+,BRF
+macro-average ROC AUC,0.85
+ROC AUC of class Mutated,0.98
+ROC AUC of class NOS/NEC,0.79
+ROC AUC of class Wildtype,0.76

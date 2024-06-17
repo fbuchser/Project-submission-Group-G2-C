@@ -1,0 +1,9 @@
+\begin{tabular}{lrr}
+\toprule
+Unencoded Classes & Encoded Classes & Computed Class Weights \\
+\midrule
+Mutated & 0 & 14.4444 \\
+NOS/NEC & 1 & 2.0635 \\
+Wildtype & 2 & 0.4088 \\
+\bottomrule
+\end{tabular}

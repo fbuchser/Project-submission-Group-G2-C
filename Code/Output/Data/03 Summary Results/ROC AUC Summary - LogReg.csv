@@ -1,0 +1,5 @@
+,LogReg
+macro-average ROC AUC,0.79
+ROC AUC of class Mutated,0.95
+ROC AUC of class NOS/NEC,0.69
+ROC AUC of class Wildtype,0.72

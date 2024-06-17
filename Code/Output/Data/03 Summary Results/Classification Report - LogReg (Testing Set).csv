@@ -1,0 +1,7 @@
+,precision,recall,f1-score,support
+Mutated,0.5,0.4,0.44,5.0
+NOS/NEC,0.29,0.41,0.34,17.0
+Wildtype,0.87,0.82,0.85,101.0
+accuracy,,,0.75,123.0
+macro avg,0.56,0.54,0.54,123.0
+weighted avg,0.78,0.75,0.76,123.0

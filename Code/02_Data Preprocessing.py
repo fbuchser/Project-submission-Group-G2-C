@@ -431,10 +431,6 @@ print()
 X_train_selected = pd.DataFrame(data=df_X_train_imputed.loc[:, selected_features])
 X_test_selected = pd.DataFrame(data=df_X_test_imputed.loc[:, selected_features])
 
-# Save selected features
-X_train_selected.to_csv("./Output/Data/02 12-Feature Selection/X_train_selected300_mrmr.csv", sep=',', index=False, encoding='utf-8')
-X_test_selected.to_csv("./Output/Data/02 12-Feature Selection/X_test_selected300_mrmr.csv", sep=',', index=False, encoding='utf-8')
-
 
 
 #13 ####

@@ -1,0 +1,10 @@
+\begin{tabular}{lrrrr}
+\toprule
+ & BRF & XGBoost & SVM & LogReg \\
+\midrule
+macro-average ROC AUC & 0.85 & 0.84 & 0.81 & 0.79 \\
+ROC AUC of class Mutated & 0.98 & 0.96 & 0.96 & 0.95 \\
+ROC AUC of class NOS/NEC & 0.79 & 0.76 & 0.69 & 0.69 \\
+ROC AUC of class Wildtype & 0.76 & 0.78 & 0.74 & 0.72 \\
+\bottomrule
+\end{tabular}
