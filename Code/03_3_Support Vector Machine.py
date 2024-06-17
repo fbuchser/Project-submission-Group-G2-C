@@ -214,6 +214,7 @@ y_test = pd.read_csv("./Output/Data/02 13-Preprocessed Data/y_test_final.csv")
 
 print('Scaling')
 scaler = StandardScaler()
+np.random.seed(42)
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
@@ -312,6 +313,7 @@ performance_evaluation(
     # model
     grid1
     )
+
 #Performance on testing set:
 pred1_test = grid1.predict(X_test_scaled)
 performance_evaluation(
