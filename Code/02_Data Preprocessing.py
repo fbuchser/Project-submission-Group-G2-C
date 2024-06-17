@@ -353,6 +353,18 @@ imp = IterativeImputer(
         max_iter=5, # Half of default to reduce compution time.
     )
 
+
+"""
+This is the exact imputation process also used in the 02_Data Preprocessing 11-Imputations.ipynb file.
+
+The process was executed on the Euler cluster because of the high computational effort.
+It took xxx hours to complete with 40 CPU cores. (yes we know that's a lot)
+The imputed data set (as ran on the Euler cluster) is already available in the 02 11-Imputations folder.
+
+All steps on how we ran the Imputation on the server are also documented in the 02_Data Preprocessing 11-Imputations.ipynb file.
+"""
+
+
 """
 # Imputing process
 t1_train = time.time()
@@ -380,7 +392,13 @@ print(f"The testing imputation process took {(t2_test - t1_test) / 60:.2f} minut
 print()
 """
 
-# open imputations (without imputing)
+# open imputations (without imputing again)
+
+# If you impute the data set yourself,
+# (on a server) you have to copy the imputed data set into the 02 11-Imputations folder.
+# (on your device with this code) you need to uncomment the imputing process above.
+# (with 4 CPU cores on my device it was still going after 14 hours)
+
 df_X_train_imputed = pd.read_csv("./Output/Data/02 11-Imputations/X_train_imputed.csv", header=0)
 df_X_test_imputed = pd.read_csv("./Output/Data/02 11-Imputations/X_test_imputed.csv", header=0)
 
